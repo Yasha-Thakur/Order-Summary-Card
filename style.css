@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 720px;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+}
+
+h1 {
+  font-size: 25px;
+  color: hsl(223, 47%, 23%);
+}
+h1,
+.p-plan {
+  font-weight: 900;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 40px 75px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.para1 {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  font-size: 16px;
+  width: 80%;
+}
+
+.pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+  width: 80%;
+}
+
+.plan-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+}
+
+.plan {
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.change:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.change-div {
+  display: flex;
+  justify-content: right;
+}
+
+.proceed {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 13px;
+  cursor: pointer;
+  width: 80%;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.proceed:hover {
+  background-color: hsl(224, 23%, 55%);
+  color: #fff;
+}
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 13px;
+  text-align: center;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attr-a:hover {
+  text-decoration: underline;
+  color: hsl(224, 23%, 55%);
+}
+
+.attr-a {
+  text-decoration: none;
+}
+
+@media (max-width: 460px) {
+  .card {
+    width: 320px;
+  }
+}
